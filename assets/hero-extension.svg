@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560" role="img" aria-labelledby="heroArtTitle heroArtDesc">
+  <title id="heroArtTitle">Menú contextual de Firefox con la opción Guardar como PNG</title>
+  <desc id="heroArtDesc">Una ventana de navegador muestra una fotografía de paisaje. El menú contextual resalta la opción Guardar como PNG y una etiqueta confirma que el archivo se descargó.</desc>
+
+  <defs>
+    <pattern id="dotGrid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#17150f" opacity=".14"/>
+    </pattern>
+    <clipPath id="photoClip">
+      <rect x="84" y="170" width="340" height="190" rx="7"/>
+    </clipPath>
+  </defs>
+
+  <!-- Textura de fondo -->
+  <rect width="720" height="560" fill="url(#dotGrid)"/>
+
+  <!-- Ventana: sombra dura y marco -->
+  <rect x="64" y="52" width="568" height="408" rx="16" fill="#17150f"/>
+  <rect x="52" y="40" width="568" height="408" rx="16" fill="#fbf8f1" stroke="#17150f" stroke-width="3"/>
+
+  <!-- Barra del navegador -->
+  <path d="M53 92h566" stroke="#17150f" stroke-width="2"/>
+  <rect x="76" y="59" width="10" height="10" fill="#e4572e" stroke="#17150f" stroke-width="2"/>
+  <rect x="94" y="59" width="10" height="10" fill="#ebc46a" stroke="#17150f" stroke-width="2"/>
+  <rect x="112" y="59" width="10" height="10" fill="#175e54" stroke="#17150f" stroke-width="2"/>
+  <rect x="150" y="54" width="332" height="28" rx="14" fill="#e6dfcf" stroke="#17150f" stroke-width="2"/>
+  <text x="166" y="74" font-family="'IBM Plex Mono','Courier New',monospace" font-size="15" fill="#4a4438">ejemplo.com</text>
+  <g fill="none" stroke="#4a4438" stroke-width="1.5">
+    <rect x="452" y="62" width="10" height="9" rx="1.5"/>
+    <path d="M454.5 62v-2.5a2.5 2.5 0 0 1 5 0V62"/>
+  </g>
+
+  <!-- Contenido de la página -->
+  <rect x="84" y="118" width="252" height="16" rx="3" fill="#17150f"/>
+  <rect x="84" y="143" width="168" height="10" rx="3" fill="#4a4438" opacity=".55"/>
+
+  <!-- Fotografía -->
+  <rect x="84" y="170" width="340" height="190" rx="7" fill="#ebc46a"/>
+  <g clip-path="url(#photoClip)">
+    <circle cx="358" cy="214" r="26" fill="#e4572e" stroke="#17150f" stroke-width="2.5"/>
+    <path d="M84 342 158 250l56 62 44-50 92 80v18H84Z" fill="#175e54"/>
+    <path d="M84 360 168 308l56 30 52-38 72 46 76-24v38H84Z" fill="#17150f"/>
+    <path d="M286 222c4-4 8-4 12 0m8-6c4-4 8-4 12 0" fill="none" stroke="#17150f" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <rect x="84" y="170" width="340" height="190" rx="7" fill="none" stroke="#17150f" stroke-width="3"/>
+
+  <!-- Confirmación de descarga -->
+  <rect x="84" y="382" width="198" height="30" rx="15" fill="#d7e4dd" stroke="#17150f" stroke-width="2"/>
+  <circle cx="101" cy="397" r="7" fill="#175e54"/>
+  <path d="m97.5 397 2.5 2.5 4-5" fill="none" stroke="#fbf8f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="116" y="402" font-family="'IBM Plex Mono','Courier New',monospace" font-size="13.5" fill="#17150f">guardada.png</text>
+  <rect x="298" y="388" width="126" height="8" rx="2" fill="#17150f" opacity=".25"/>
+  <rect x="298" y="402" width="94" height="8" rx="2" fill="#17150f" opacity=".18"/>
+
+  <!-- Menú contextual -->
+  <rect x="454" y="188" width="222" height="196" rx="12" fill="#17150f"/>
+  <rect x="442" y="176" width="222" height="196" rx="12" fill="#fbf8f1" stroke="#17150f" stroke-width="2.5"/>
+  <text x="458" y="198" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10.5" letter-spacing="1.4" fill="#6d6555">IMAGEN</text>
+  <path d="M454 207h198" stroke="#17150f" stroke-width="1" opacity=".22"/>
+
+  <!-- Opción: abrir imagen -->
+  <g fill="none" stroke="#17150f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="459" y="218" width="13" height="12" rx="2"/>
+    <path d="m459 228 4-4 3 3 2-2 4 4"/>
+    <circle cx="463" cy="222" r="1.2"/>
+  </g>
+  <text x="484" y="229" font-family="'Outfit','Segoe UI',sans-serif" font-size="14.5" fill="#4a4438">Abrir imagen</text>
+
+  <!-- Opción resaltada -->
+  <rect x="450" y="248" width="206" height="42" rx="8" fill="#e4572e"/>
+  <g fill="none" stroke="#17150f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M466 256v10"/>
+    <path d="m462 262 4 4 4-4"/>
+    <path d="M459 271h14"/>
+  </g>
+  <text x="485" y="274" font-family="'Outfit','Segoe UI',sans-serif" font-size="15.5" font-weight="600" fill="#17150f">Guardar como PNG</text>
+  <path d="m628 269 4 4 9-10" fill="none" stroke="#17150f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Opción: copiar imagen -->
+  <g fill="none" stroke="#17150f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="459" y="304" width="11" height="11" rx="2"/>
+    <path d="M462 301h9a2 2 0 0 1 2 2v9"/>
+  </g>
+  <text x="484" y="315" font-family="'Outfit','Segoe UI',sans-serif" font-size="14.5" fill="#4a4438">Copiar imagen</text>
+
+  <!-- Opción: guardar como -->
+  <g fill="none" stroke="#17150f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M459 344h13v9h-13z"/>
+    <path d="M465.5 338v9m-3-3 3 3 3-3"/>
+  </g>
+  <text x="484" y="353" font-family="'Outfit','Segoe UI',sans-serif" font-size="14.5" fill="#4a4438">Guardar imagen como…</text>
+
+  <!-- Cursor -->
+  <path d="M446 280v40l10-9 7 15 8-4-7-14 13-1z" fill="#fbf8f1" stroke="#17150f" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Etiqueta PNG -->
+  <g transform="translate(596 98) rotate(4)">
+    <rect x="4" y="4" width="80" height="34" rx="6" fill="#17150f"/>
+    <rect width="80" height="34" rx="6" fill="#ebc46a" stroke="#17150f" stroke-width="2.5"/>
+    <text x="40" y="24" text-anchor="middle" font-family="'IBM Plex Mono','Courier New',monospace" font-size="15.5" font-weight="500" letter-spacing="1.5" fill="#17150f">PNG</text>
+  </g>
+</svg>
