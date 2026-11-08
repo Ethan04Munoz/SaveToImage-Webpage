@@ -1,0 +1,125 @@
+/* ==========================================================================
+   tokens.css
+   Fuente única de verdad para color, tipografía, espacio, forma y movimiento.
+   No contiene selectores de componentes.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* ---------------------------------------------------------------------
+     Paleta de marca
+     Papel cálido + tinta cacao + un acento dominante (vermilion).
+     --------------------------------------------------------------------- */
+  --color-paper: #f3efe6;
+  --color-paper-raised: #fbf8f1;
+  --color-paper-deep: #e6dfcf;
+  --color-ink: #17150f;
+  --color-ink-soft: #4a4438;
+  --color-ink-muted: #6d6555;
+  --color-accent: #e4572e;
+  --color-accent-deep: #a33312;
+  --color-accent-soft: #f6c9b8;
+  --color-teal: #175e54;
+  --color-teal-soft: #d7e4dd;
+  --color-sand: #ebc46a;
+
+  /* ---------------------------------------------------------------------
+     Alias semánticos
+     --------------------------------------------------------------------- */
+  --surface-page: var(--color-paper);
+  --surface-raised: var(--color-paper-raised);
+  --surface-inverse: var(--color-ink);
+  --surface-accent: var(--color-accent);
+
+  --text-primary: var(--color-ink);
+  --text-secondary: var(--color-ink-soft);
+  --text-muted: var(--color-ink-muted);
+  --text-inverse: var(--color-paper-raised);
+  --text-inverse-muted: color-mix(in srgb, var(--color-paper-raised) 78%, transparent);
+
+  --color-line-soft: color-mix(in srgb, var(--color-ink) 18%, transparent);
+  --color-line-inverse: color-mix(in srgb, var(--color-paper-raised) 26%, transparent);
+
+  /* ---------------------------------------------------------------------
+     Tipografía
+     Syne (titulares expresivos) + Outfit (texto) + IBM Plex Mono (metadatos)
+     --------------------------------------------------------------------- */
+  --font-display: "Syne", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-body: "Outfit", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-mono: "IBM Plex Mono", "Cascadia Mono", "Courier New", monospace;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 800;
+
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --text-md: clamp(1.05rem, 1rem + 0.25vw, 1.2rem);
+  --text-lg: clamp(1.2rem, 1.1rem + 0.45vw, 1.5rem);
+  --text-xl: clamp(1.65rem, 1.35rem + 1.3vw, 2.4rem);
+  --text-2xl: clamp(2.1rem, 1.55rem + 2.7vw, 3.4rem);
+  --text-3xl: clamp(2.6rem, 1.6rem + 4.5vw, 4.75rem);
+  --text-hero: clamp(2.85rem, 1.5rem + 5.8vw, 4.85rem);
+
+  --leading-none: 0.95;
+  --leading-tight: 1.1;
+  --leading-snug: 1.35;
+  --leading-body: 1.62;
+
+  /* ---------------------------------------------------------------------
+     Espaciado y medidas
+     --------------------------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 5rem;
+  --space-16: 7rem;
+  --space-section: clamp(4rem, 8vw, 7rem);
+
+  --gutter: clamp(1.25rem, 4vw, 2.75rem);
+  --container: 78rem;
+  --measure: 62ch;
+
+  /* ---------------------------------------------------------------------
+     Forma, bordes y elevación
+     --------------------------------------------------------------------- */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-round: 999px;
+
+  --border-width: 2px;
+  --border: var(--border-width) solid var(--color-ink);
+  --border-soft: 1px solid var(--color-line-soft);
+
+  --shadow-hard: 8px 8px 0 0 var(--color-ink);
+  --shadow-hard-sm: 4px 4px 0 0 var(--color-ink);
+  --shadow-lift: 6px 6px 0 0 var(--color-ink);
+
+  /* ---------------------------------------------------------------------
+     Movimiento
+     --------------------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 160ms;
+  --duration-base: 240ms;
+  --duration-slow: 300ms;
+
+  /* ---------------------------------------------------------------------
+     Capas
+     --------------------------------------------------------------------- */
+  --z-header: 100;
+  --z-skip: 200;
+}
